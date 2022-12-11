@@ -1,4 +1,4 @@
-const Intern = require('../lib/intern');
+const Intern = require('../lib/Intern');
 // set the role of employee to intern
 describe('Intern', () => {
     describe('getRole', () => {
