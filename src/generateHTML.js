@@ -1,3 +1,30 @@
+function generateHTML(teamMembers) {
+  const header = `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Team Builder</title>
+    </head>
+
+  <body class="flex flex-col h-screen justify-between">
+
+  header class="p-8 bg-rose-700 mb-6">
+        <h1 class="text-white text-center text-5xl"><a href="./test.html"
+                class="hover:text-slate-200 ease-in-out duration-200"><i class="fa-solid fa-people-group"></i></a> Team Builder
+        </h1>
+    </header>
+    <main>
+        <section id="aside-top" class="flex flex-wrap m-2 gap-auto justify-around">
+    `;
+    const footer = `
+        </section>
+    </main>
+    </body>
+</html>
+    `;
 // makes the manager card
 const generateManager = (manager) => {
     return `<div class="card" style="width: 18rem;">
@@ -36,4 +63,6 @@ const generateEngineer = (engineer) => {
     </ul>
   </div>`
 }
+}
 
+module.exports = generateHTML;
